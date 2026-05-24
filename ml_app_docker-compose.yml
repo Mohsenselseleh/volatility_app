@@ -1,0 +1,7 @@
+services:
+  ml-api:
+    build: .
+    container_name: ml_volatility_api
+    ports:
+      - "9001:8000"
+    restart: unless-stopped
